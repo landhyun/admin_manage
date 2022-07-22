@@ -1,4 +1,11 @@
+import Axios from "axios";
 import { Button, Table } from "react-bootstrap";
+
+const submitTest = () => {
+    Axios.get("http://localhost:8000/", {}).then(() => {
+        alert("등록 완료!");
+    });
+};
 
 function Board() {
     return (
@@ -38,7 +45,7 @@ function Board() {
         </tbody>
         </Table>
             
-        <Button variant="outline-info">작성</Button>
+        <Button variant="outline-info" onClick={submitTest}>작성</Button>
         <Button variant="outline-success">수정</Button>
         <Button variant="outline-warning">삭제</Button>
         </>
