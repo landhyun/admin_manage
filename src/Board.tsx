@@ -49,7 +49,7 @@ function Board() {
         <Button variant="outline-success">수정</Button>
         <Button variant="outline-warning">삭제</Button>
         </>
-)
+    )
 }
 
 export default Board;
